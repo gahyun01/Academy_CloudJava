@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS3 Selector Basic</title>
+  <style>
+    /* $ == ~로 끝나는, ^ ==  */
+    img[src$=png] {
+      border: 3px solid red;
+    }
+
+    img[src$=jpeg] {
+      border: 3px solid green;
+    }
+
+    img[src$=gif] {
+      border: 3px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="../img/rain.png" width="200" height="250" />
+  <img src="../img/jg.jpeg" width="200" height="250" />
+  <img src="../img/bg_chkbox.gif" width="200" height="250" />
+</body>
+
+</html>
