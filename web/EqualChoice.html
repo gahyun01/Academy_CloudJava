@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS3 Selector Basic</title>
+  <style>
+    h1+h2 {
+      /* h1 뒤에 h2가 오면 */
+      color: red;
+    }
+
+    h1~h2 {
+      /* h1 뒤에 h2가 온 다음 */
+      background-color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Header - 1</h1>
+  <h2>Header - 2</h2> <!-- 빨간색, 배경색 주황 -->
+  <h2>Header - 2</h2> <!-- 배경색 주황 -->
+  <h2>Header - 2</h2> <!-- 배경색 주황 -->
+  <h2>Header - 2</h2> <!-- 배경색 주황 -->
+</body>
+
+</html>
