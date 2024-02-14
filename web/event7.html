@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>event7</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+</head>
+
+<style>
+    .blue {
+        color: blue;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        // toggleClass() : 클래스가 없으면 추가, 있으면 제거
+
+        $(".b1").click(function(){ // 버튼을 클릭하면 기능을 넣을꺼야
+            $('h1, h2, div').addClass('blue');
+        });
+
+        $(".b2").click(function(){ // 버튼을 클릭하면 기능을 넣을꺼야
+            $('h1, h2, div').removeClass('blue');
+            $('h1, h2, div').css({'background-color':'yellow', "font-size":"20px"});
+        });
+        $("#ch").mouseover(function(){
+            $(this).attr('src', 'img/cloudy.png');
+        });
+        $("#ch").mouseout(function(){
+            $(this).attr('src', 'img/jg.jpeg');
+        });
+    });
+</script>
+
+<body>
+    <h1>html</h1>
+    <h2>javascript</h2>
+    <div>jquery</div>
+    <button class="b1">적용</button>
+    <button class="b2">해제</button>
+    <img src="img/jg.jpeg" id="ch" width="200" height="200"/>
+</body>
+</html>
