@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>event5</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+</head>
+
+<script>
+    // 두가지 방법의 실행결과는 같음
+
+    window.onload = function() {
+        // jQuery 대신 web이라는 문자열을 출력
+        // document.getElementById("pp").innerHTML = "web";
+    };
+    $(document).ready(function(){
+        // $( 선택자 ).함수( function() { 실행문 });
+        // $("#pp").html("web");
+        $("button").click(function(){
+            $('p').hide();
+        });
+    });
+</script>
+
+<body>
+    <p id="pp">jQuery</p>
+    <button>click</button>
+</body>
+</html>

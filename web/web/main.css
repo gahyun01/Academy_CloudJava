@@ -1,0 +1,30 @@
+body {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0;
+}
+
+.header {
+  display: flex;
+  width: 1300px;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #bebcbc;
+}
+
+.nav p {
+  padding: 10px 20px;
+  background-color: #bebcbc;
+  border-radius: 20px;
+}

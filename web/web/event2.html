@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>event2</title>
+</head>
+
+<script>
+    function add() {
+        var img = document.createElement('img');
+        img.setAttribute('src', 'img/jg.jpeg');
+        img.setAttribute('width', 100);
+        img.setAttribute('height', 122);
+        document.body.appendChild(img);
+    };
+</script>
+
+<body>
+    <!-- DOMscript로 인해 가능 -->
+    <!-- 뭔가 추가할 수 있다는건 없앨 수도 있음 -->
+    <a href="#" onclick="add()">[이미지 추가]</a>
+</body>
+</html>

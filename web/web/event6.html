@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>event6</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+</head>
+
+<script>
+    $(document).ready(function(){
+        // var q1s = true;
+        // var q2s = true;
+        // $("div.q1").hide();
+        // $("div.q2").hide();
+
+        // $("p.q1").click(function(){
+        //     if(q1s == true){
+        //         $("div.q1").show();
+        //         q1s = false;
+        //     } 
+        //     else {
+        //         $("div.q1").hide();
+        //         q1s = true;
+        //     }
+        // });
+        // $("p.q2").click(function(){
+        //     if(q2s == true){
+        //         $("div.q2").show();
+        //         q2s = false;
+        //     }
+        //     else{
+        //         $("div.q2").hide();
+        //         q2s = true;
+        //     }
+        // });
+
+        $("p.q1").click(function(){
+            if(("div.q1").is(':visible')){
+                $("div.q1").hide();
+            }
+            else{
+                $("div.q1").show();
+            }
+        });
+        $("p.q2").click(function(){
+            if(("div.q2").is(':visible')){
+                $("div.q2").hide();
+            }
+            else{
+                $("div.q2").show();
+            }
+        });
+    });
+</script>
+
+<body>
+    <h2>질문1 : 대한민국의 수도는 어디입니까?</h2>
+    <p class="q1">[ 정답 보기 ]</p>
+    <div class="q1">대한민국의 수도는 <strong>서울</strong>입니다.</div>
+    <br></br>
+    <h2>질문2 : 대한민국의 국보1호는 무엇입니까?</h2>
+    <p class="q2">[ 정답 보기 ]</p>
+    <div class="q2">대한민국의 국보1호는 <strong>숭례문</strong>입니다.</div>
+</body>
+</html>

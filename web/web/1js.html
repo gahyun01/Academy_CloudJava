@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>1.js</title>
+  <style>
+    body {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      margin-top: 50px;
+      align-items: center;
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+  <!-- <script>
+    var text;
+    var week = new Date().getDay();
+    switch (week) {
+      case 1:
+      case 2:
+        text = "HTML5";
+        break;
+      case 3:
+      case 4:
+        text = "자바스크립트";
+        break;
+      case 5:
+      case 6:
+        text = "영어";
+        break;
+      case 0:
+      default:
+        text = "수영";
+    }
+    document.write("오늘은 <b>" + text + "</b> 학습하는 날입니다. <p/>");
+  </script> -->
+
+  <body>
+    <table border='1'>
+      <tr>
+        <script>
+          var x, y;
+          for (x = 2; x <= 9; x++) {
+            if (x == 6) {
+              document.write("</tr><tr>");
+            }
+            document.write("<td> <b>--- [ " + x + "단 ] ---</b>" + "<br>");
+            for (y = 1; y <= 9; y++) {
+              document.write(x + " * " + y + "=" + (x * y) + "<br>");
+            }
+            document.write("</td>");
+          }
+        </script>
+      </tr>
+    </table>
+    <table border='1'>
+      <script>
+        var x, y;
+        document.write("<tr>");
+        for (x = 2; x <= 5; x++) {
+          document.write("<td> <b>--- [ " + x + "단 ] ---</b>" + "<br>");
+        }
+        document.write("</tr>");
+
+        for (y = 1; y <= 9; y++) {
+          document.write("<tr>");
+          for (x = 2; x <= 5; x++) {
+            document.write("<td>" + x + " * " + y + "=" + (x * y) + "<br></td>");
+          }
+          document.write("</tr>");
+        }
+        document.write("<tr>");
+        for (x = 6; x <= 9; x++) {
+          document.write("<td> <b>--- [ " + x + "단 ] ---</b>" + "<br>");
+        }
+        document.write("</tr>");
+
+        for (y = 1; y <= 9; y++) {
+          document.write("<tr>");
+          for (x = 6; x <= 9; x++) {
+            document.write("<td>" + x + " * " + y + "=" + (x * y) + "<br></td>");
+          }
+          document.write("</tr>");
+        }
+      </script>
+    </table>
+    <script>
+      function myFunction() {
+        alert("알림");
+      }
+    </script>
+    <input type="button" onclick="myFunction()" value="알림">
+    <script>
+      var result;
+      function add(name, n) {
+        document.write(name + " 학생이 1부터 " + n + "까지 덧셈 수행<br>");
+        var sum = 0;
+        for (var i = 1; i <= n; i++) {
+          sum += i;
+        }
+        return sum;
+      }
+      result = add("홍길동", 10);
+      document.write("결과: " + result + "<p/>");
+      result = add("이영희", 100);
+      document.write("결과: " + result + "<p/>");
+    </script>
+  </body>
+
+</html>

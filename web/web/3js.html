@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>3.js</title>
+</head>
+
+<script>
+  function select_answer() {
+    var temp = quize.answer.value;
+
+    if (temp == '') {
+      alert("아무것도 선택하지 않았네요. 답을 입력해주세요.");
+      quize.answer.focus();
+    }
+    else if (temp == "b" || temp == "B") {
+      alert("정답입니다.");
+      location.href = "4.html";
+    }
+    else {
+      alert("틀렸습니다. 다시 풀어보세요.");
+      quize.answer.focus();
+      quize.answer.select();
+    }
+  }
+</script>
+
+<body onload="">
+  <b>다음 문제의 답을 입력하시오. ( 대소문자 구분 없음 ) </b>
+  다음 중 축구선수가 아닌 사람은? <br />
+  A ) 손흥민 B ) 호호호 C ) 메시 D ) 박지성<p>
+  <form name="quiz">
+    답 : <input type="text" name="answer">
+    <input type="button" value="확인" onclick="select_answer()">
+  </form>
+</body>
+
+</html>

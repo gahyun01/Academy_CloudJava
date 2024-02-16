@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>7.js</title>
+</head>
+
+<script>
+    function dom() {
+        document.getElementById("div1");
+        div1.style.color = "red";
+        var dc = document.getElementsByClassName('d1');
+        dc[1].style.color = "blue";
+        document.getElementsByClassName('div');
+        for(var i = 0; i < dc.length; i++) {
+            dc[i].style.fontSize = "20px";
+        }
+    }
+</script>
+
+<body>
+    <div id="div1" class="d1">html</div>
+    <div id="div2" class="d1">css</div>
+    <input type="button" value="확인" onclick="dom()">
+</body>
+</html>

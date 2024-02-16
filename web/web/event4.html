@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>event4</title>
+</head>
+
+<script>
+    function createAddRow(){
+        var name = document.createElement("input");
+        name.setAttribute("type", "text");
+        name.value="green";
+        name.id="name";
+
+        var age = document.createElement("input");
+        age.setAttribute("type", "text");
+        age.value="20";
+        age.id="age";
+
+        var del = document.createElement("input");
+        del.setAttribute("type", "button");
+        del.value="삭제";
+        del.id="del";
+
+        del.setAttribute("onclick", "removeHang(this)");
+
+        var taList = document.getElementById("tableList");
+        var row = taList.insertRow(taList.rows.length);
+
+        var td1 = row.insertCell(0);
+        var td2 = row.insertCell(1);
+        var td3 = row.insertCell(2);
+
+        td1.appendChild(name);
+        td2.appendChild(age);
+        td3.appendChild(del);
+    }
+
+    // 버튼을 가져옴
+    // 버튼을 클릭하면 해당 행을 삭제
+    function removeHang(ob){
+        var tdd = ob.perentNode; // 버튼의 부모노드 -> td
+        var trr = tdd.parentNode; // td의 부모노드 -> tr
+        var tbb = trr.parentNode; // tr의 부모노드 -> table
+        tbb.removeChild(trr);
+    }
+</script>
+
+<body>
+    <h1> 테이블 생성 </h1>
+    <form name="f">
+        <input type="button" value="행추가" onclick="createAddRow()"><br/><br/>
+
+        <table id="tableList">
+            <tr bgcolor="pink">
+                <td>이름</td>
+                <td>나이</td>
+                <td>삭제</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>2.js</title>
+</head>
+
+<script>
+  function info() {
+    str1 = document.myform.elements[0].value;
+    str2 = document.myform.elements[1].value;
+    document.write("form 태그 내의 첫번째 양식 입력 값 : " + str1 + "<p>");
+    document.write("form 태그 내의 두번째 양식 입력 값 : " + str2 + "<p>");
+  }
+
+  function pass() {
+    var pass_len = myform.bimil.value.length;
+    if ((pass_len >= 4) && (pass_len <= 8)) {
+      alert("입력해주셔서 감사합니다");
+    }
+    else {
+      alert("4~8자 사이의 암호만 유효합니다.");
+      myform.bimil.value = "";
+      myform.bimil.focus();
+    }
+  }
+</script>
+
+<body>
+  다음은 단추를 누르면 form의 정보가 나타납니다.<p>
+  <form name="myform">
+    성명 : <input type="text" value="">
+    주소 : <input type="text" value="">
+    <input type="button" value="정보보기" onclick="info()">
+    <br /><br />
+    이름 : <input type="text" name="irum" size="10"><br />
+    암호 : <input type="password" name="bimil" size="10" maxlength="8"><br />
+    <input type="button" value="비밀번호 입력 글자 수 체크" onclick="pass()">
+  </form>
+</body>
+</html>

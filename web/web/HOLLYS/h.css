@@ -1,0 +1,107 @@
+body{
+    text-align: center;
+    margin: 0 0;
+}
+
+body header{
+    display: flex;
+    justify-content: center;
+    height: 148px;
+    background: url(https://www.hollys.co.kr/websrc/images/layout/bg_headerSub.gif) left bottom repeat-x;
+}
+
+/* body header .headerInner{
+    width: 940px;
+} */
+
+body header .headerInner .tops{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 940px;
+}
+
+body header .headerInner .tops .start{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+body header .headerInner .tops .logimg{
+    margin: auto 0;
+}
+
+body header .headerInner .tops .start .bimg{
+    margin-top: 15px;
+}
+
+body header .headerInner .tops .util{
+    display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+    list-style: none;
+}
+
+body header .headerInner .tops .util li{
+    float: left;
+    gap: 10px;
+}
+
+body header .headerInner .tops .util li .eimg img{
+    margin-top: 8px;
+}
+
+body header .headerInner .gnb{
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+body header .headerInner .gnb li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 60px;
+    float: left;
+}
+
+body header .headerInner .gnb li span{
+    color: white;
+    font-size: 11px;
+    margin-top: 1px;
+} 
+
+body header .sbtn {
+    margin: auto 30px;
+}
+
+body .gnbBg{
+    background: url(https://www.hollys.co.kr/websrc/images/layout/bg_2depth.gif) left top repeat-x;
+    height: 279px;
+    z-index: 999;
+    position: absolute;
+    top: 146px;
+    width: 100%;
+    display: none;
+}
+
+body .gnbBg .gnbInner{
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 17px 0 0 0;
+}
+
+body .gnbBg .gnbInner .gnbul{
+    list-style: none;
+    float: left;
+    width: 156px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 19px;
+}

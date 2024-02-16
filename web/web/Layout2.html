@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS3 Selector Basic</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 1830px;
+      margin: 0 0;
+    }
+
+    header {
+      display: flex;
+      width: 1400px;
+      justify-content: center;
+    }
+
+    header h2 {
+      width: 1270px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .nav {
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    .nav ul {
+      margin: 0 0;
+      padding: 0 0;
+      width: 1400px;
+    }
+
+    .nav li {
+      display: flex;
+      list-style: none;
+      float: left;
+      margin: 0 50px;
+    }
+
+    .images {
+      display: flex;
+      width: 1400px;
+      height: 600px;
+      background-color: orange;
+    }
+
+    .li1 ul {
+      margin: 0 0;
+      padding: 0 0;
+      width: 1400px;
+    }
+
+    .li1 li {
+      display: flex;
+      list-style: none;
+      float: left;
+      padding-right: 20.94%;
+      padding-bottom: 250px;
+    }
+
+    .li1 li:nth-child(2n) {
+      /* 짝수번째 */
+      background-color: pink;
+    }
+
+    .li1 li:nth-child(2n+1) {
+      /* 홀수번째 */
+      background-color: lightblue;
+    }
+
+    .li2 ul {
+      margin: 0 0;
+      padding: 0 0;
+      width: 1400px;
+    }
+
+    .li2 li {
+      display: flex;
+      list-style: none;
+      float: left;
+      padding-right: 44.79%;
+      padding-bottom: 500px;
+      margin-bottom: 100px;
+    }
+
+    .li2 li:nth-child(2n) {
+      /* 짝수번째 */
+      background-color: gold;
+    }
+
+    .li2 li:nth-child(2n+1) {
+      /* 홀수번째 */
+      background-color: lightgreen;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      width: 1830px;
+      justify-content: center;
+      align-items: center;
+      background-color: lightgray;
+      border-top: 4px solid darkgray;
+      margin: 0 0;
+    }
+
+    footer .f1 {
+      display: flex;
+      width: 1400px;
+      float: left;
+      justify-content: space-between;
+    }
+
+    footer .f2 {
+      display: flex;
+      width: 1400px;
+      float: left;
+      justify-content: space-between;
+      border-top: 4px solid darkgray;
+      margin-bottom: 30px;
+    }
+
+    footer .f21 {
+      display: flex;
+      grid-gap: 30px;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>언어설정</p>
+    <h2>로고</h2>
+    <p>탑 너비</p>
+  </header>
+  <ul class="nav">
+    <li>메인너비1</li>
+    <li>메인너비2</li>
+    <li>메인너비3</li>
+    <li>메인너비4</li>
+  </ul>
+  <div class="images">이미지 슬라이더</div>
+  <div class="li1">
+    <ul>
+      <li>탑배너1</li>
+      <li>탑배너2</li>
+      <li>탑배너3</li>
+      <li>탑배너4</li>
+    </ul>
+  </div>
+  <div class="li2">
+    <ul>
+      <li>바텀배너1</li>
+      <li>바텀배너2</li>
+    </ul>
+  </div>
+  <footer>
+    <div class="f1">
+      <p>푸터탑네비</p>
+      <p>SNS네비</p>
+    </div>
+    <div class="f2">
+      <div class="f21">
+        <p>주소카피라잇</p>
+        <p>푸터바텀네비</p>
+      </div>
+      <p>웹접근성마크</p>
+    </div>
+  </footer>
+</body>
+
+</html>

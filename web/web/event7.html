@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>event7</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+</head>
+
+<style>
+    .blue {
+        color: blue;
+    }
+    #slide, #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+    #panel {
+        padding: 70px;
+        display: none;
+        background-color: #ffffce;
+    }
+</style>
+
+<script>
+    // $(document).ready(function(){}); : 문서가 준비되면 실행
+    $(document).ready(function(){
+        // toggleClass() : 클래스가 없으면 추가, 있으면 제거
+
+        $(".b1").click(function(){ // 버튼을 클릭하면 기능을 넣을꺼야
+            $('h1, h2, div').addClass('blue');
+        });
+
+        $(".b2").click(function(){ // 버튼을 클릭하면 기능을 넣을꺼야
+            $('h1, h2, div').removeClass('blue');
+            $('h1, h2, div').css({'background-color':'yellow', "font-size":"20px"});
+        });
+        $("#ch").mouseover(function(){
+            $(this).attr('src', 'img/cloudy.png');
+        });
+        $("#ch").mouseout(function(){
+            $(this).attr('src', 'img/jg.jpeg');
+        });
+
+        $("#stop").click(function(){
+            // $("#panel").slideDown('slow');
+            $("#panel").slideToggle('slow'); // slideToggle() : 슬라이드 업, 다운을 번갈아가며 실행
+        });
+
+        $("#panel").click(function(){
+            $("#panel").slideUp('1000');
+        });
+    });
+</script>
+
+<body>
+    <div id="slide">[ 오늘의 공지사항 ]</div>
+    <div id="panel">dhsmfdms jQuery 프로그램을 학습합니다.<br/>
+                    예제를 작성한 후 실행해보세요.</div>
+    <p></p>
+    <button id="stop">Toggle sliding</button>
+
+    <h1>html</h1>
+    <h2>javascript</h2>
+    <div>jquery</div>
+    <button class="b1">적용</button>
+    <button class="b2">해제</button>
+    <img src="img/jg.jpeg" id="ch" width="200" height="200"/>
+</body>
+</html>
