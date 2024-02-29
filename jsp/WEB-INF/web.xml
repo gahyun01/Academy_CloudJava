@@ -1,0 +1,46 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+	<servlet>
+		<servlet-name>Adder</servlet-name>
+		<servlet-class>AdderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Adder</servlet-name>
+		<url-pattern>/Adder</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Animal</servlet-name>
+		<servlet-class>Animal</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Animal</servlet-name>
+		<url-pattern>/Animal</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SignUp</servlet-name>
+		<servlet-class>SignUp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUp</servlet-name>
+		<url-pattern>/SignUp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AnimalServlet</servlet-name>
+		<servlet-class>AnimalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AnimalServlet</servlet-name>
+		<url-pattern>/AnimalServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ResultServlet</servlet-name>
+		<servlet-class>ResultServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResultServlet</servlet-name>
+		<url-pattern>/ResultServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
